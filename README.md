@@ -34,6 +34,17 @@ Change `--cfg` to train using other YOLOv7 models. Options: `yolov7.yaml`, `yolo
 ### Validation
 `python3 test.py --data data/endovis18.yaml --img 320 --batch 32 --conf 0.001 --iou 0.5 --device 0 --weights runs/train/yolo_endo18_sc5/weights/best.pt --name yolov7_endo18_320_val`
 
+Trained weights for [`yolov7`](https://drive.google.com/file/d/1LLQIYa2HmUo7EcIzyggc-X088kf5WV1L/view?usp=drive_link) and [`yolov7-e6e`](https://drive.google.com/file/d/104o3KpXNsbu7qQkXWxlOtkDn2nJJJM5g/view?usp=drive_link).
+
+## ResNet50
+Run `python3.6 baseline.py` to start training the classification model. Ensure `save` is set to `True` as this checkpoint will be used for visualization and feature extraction later.
+
+Otherwise, you can downloaded the trained model file: [`GC-A`](https://drive.google.com/file/d/1m2gJejiBO1Z-SEFG2GOmFZAIkBzabdLv/view?usp=drive_link), [`GC-B`](https://drive.google.com/file/d/1jvAN2XKf8Lut-Qs69iZb463wua6Nglzg/view?usp=drive_link), [`GC-C`](https://drive.google.com/file/d/1IwIBuE5SEScyYQ4nGX_PG9XATDfVTDYN/view?usp=drive_link), [`GC-D`](https://drive.google.com/file/d/1VgrOe5pWBH2D53_Al72EjDV4ukcfsMVj/view?usp=drive_link).
+
+Place the trained model file inside the `./best_model_checkpoints`.
+
+The result reported in the main table is from [`GC-D`](https://drive.google.com/file/d/1VgrOe5pWBH2D53_Al72EjDV4ukcfsMVj/view?usp=drive_link).
+
 ### Aknowledgement
 
 The code is modified from [YOLOv5 🚀 in PyTorch](https://github.com/ultralytics/yolov5) and [Official YOLOv7](https://github.com/WongKinYiu/yolov7).

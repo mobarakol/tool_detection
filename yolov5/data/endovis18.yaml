@@ -1,0 +1,10 @@
+train: /media/mmlab/data/lalith/sai_e2e/dataset/processed/images/train/ 
+val:  /media/mmlab/data/lalith/sai_e2e/dataset/processed/images/val/
+test: /media/mmlab/data/lalith/sai_e2e/dataset/processed/images/val/
+
+# number of classes
+nc: 9
+
+# class names
+names: ['kidney', 'bipolar_forceps', 'prograsp_forceps', 'large_needle_driver',
+         'monopolar_curved_scissors', 'ultrasound_probe', 'suction', 'clip_applier', 'stapler']

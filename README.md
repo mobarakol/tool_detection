@@ -16,3 +16,7 @@ Change `--cfg` to train using other YOLOv5 models. Option: `yolov5s.yaml`, `yolo
 
 `python3 val.py --img 320 --weights runs/train/yolo_endo18_sc5/weights/best.pt --data endovis18.yaml --task test --name yolo_endo18_sc5`
 
+### Aknowledge
+
+The code is modified from [YOLOv5 🚀 in PyTorch](https://github.com/ultralytics/yolov5).
+

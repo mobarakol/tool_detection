@@ -18,6 +18,10 @@ Change `--cfg` to train using other YOLOv5 models. Options: `yolov5s.yaml`, `yol
 
 `python3 val.py --img 320 --weights runs/train/yolo_endo18_sc5/weights/best.pt --data data/endovis18.yaml --task test --name yolo_endo18_sc5`
 
+Trained weights for [`yolov5s`](https://drive.google.com/file/d/15EA3vyC0bo3Je_POvNOU6n0vuIiF0x2X/view?usp=drive_link), [`yolov5m`](https://drive.google.com/file/d/1gGNCEdyr5-fEHLZwaozDxgu4mjta21jD/view?usp=drive_link), [`yolov5l`](https://drive.google.com/file/d/1Z4j1bnncpsR26CIXw1PrU_9cf_JJwDWt/view?usp=drive_link), [`yolov5x`](https://drive.google.com/drive/folders/1Yqumsdxj-m-DBTTlbQWcQJqHiCEjdQWc?usp=drive_link).
+
+Edit the path in `data/endovis18.yaml` to the directory of the dataset folder. The folder should contain images together with their bounding box annotation in `.xml` files.
+
 ## YOLOv7
 
 ### Model training on EndoVis18
@@ -35,6 +39,8 @@ Change `--cfg` to train using other YOLOv7 models. Options: `yolov7.yaml`, `yolo
 `python3 test.py --data data/endovis18.yaml --img 320 --batch 32 --conf 0.001 --iou 0.5 --device 0 --weights runs/train/yolo_endo18_sc5/weights/best.pt --name yolov7_endo18_320_val`
 
 Trained weights for [`yolov7`](https://drive.google.com/file/d/1LLQIYa2HmUo7EcIzyggc-X088kf5WV1L/view?usp=drive_link) and [`yolov7-e6e`](https://drive.google.com/file/d/104o3KpXNsbu7qQkXWxlOtkDn2nJJJM5g/view?usp=drive_link).
+
+Edit the path in `data/endovis18.yaml` to the directory of the dataset folder. The folder should contain images together with their bounding box annotation in `.xml` files.
 
 ## ResNet50
 Run `python3.6 baseline.py` to start training the classification model. Ensure `save` is set to `True` as this checkpoint will be used for visualization and feature extraction later.
